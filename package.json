@@ -1,0 +1,20 @@
+{
+  "name": "reactjs-es5-webpack-yarn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/siozia/reactjs-es5-webpack-yarn.git",
+  "author": "Simone Iozia",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "html-webpack-plugin": "^2.30.1",
+    "jshint": "^2.9.5",
+    "jshint-loader": "^0.8.4",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server"
+  }
+}
