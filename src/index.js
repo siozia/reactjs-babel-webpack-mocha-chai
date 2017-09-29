@@ -1,2 +1,2 @@
-
-document.write("hello world");
+require("./index.css");
+document.write("<p>hello world</p>");

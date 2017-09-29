@@ -7,10 +7,19 @@ module.exports={
         path: __dirname + '/dist',
         filename: 'bundle.js'
     },
+    module: {
+        rules: [
+            {
+                test: /\.css/,
+                loader:["style-loader","css-loader"]
+            }
+
+        ]        
+    },
     plugins: [       
             new HtmlWebpackPlugin({
                 template: 'index.html',
                 inject: 'body'
             }),
-        ]    
+        ],    
 };
