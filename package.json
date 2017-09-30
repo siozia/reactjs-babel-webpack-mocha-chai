@@ -9,7 +9,7 @@
     "chai": "^4.1.2",
     "css-loader": "^0.28.7",
     "html-webpack-plugin": "^2.30.1",
-    "jshint": "^2.9.5",    
+    "jshint": "^2.9.5",
     "mocha": "^3.5.3",
     "style-loader": "^0.18.2",
     "webpack": "^3.6.0",
@@ -21,5 +21,10 @@
     "test:mocha": "mocha --reporter spec",
     "test": "$npm_execpath run test:mocha",
     "build": "$npm_execpath run lint && $npm_execpath run test && webpack -p"
+  },
+  "dependencies": {
+    "create-react-class": "^15.6.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
   }
 }

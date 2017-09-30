@@ -1,7 +1,9 @@
-require("./index.css");
-// document.write("<p>hello world</p>");
-var p = document.createElement("p");
-var app = document.getElementById("app");
-p.appendChild(document.createTextNode("hello world"));
-app.appendChild(p);
-console.log("Load ended");
+var ReactDom = require("react-dom");
+var e = require("react").createElement;
+var App = require("./components/App.js");
+
+
+ReactDom.render(
+    e(App,{name:"World"}),
+    document.getElementById("app")
+);
