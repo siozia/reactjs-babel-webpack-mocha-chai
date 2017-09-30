@@ -1,9 +1,8 @@
-var ReactDom = require("react-dom");
-var e = require("react").createElement;
-var App = require("./components/App.js");
+import React from 'react';
+import ReactDOM from "react-dom";
+import App from "./components/App";
 
-
-ReactDom.render(
-    e(App,{name:"World"}),
+ReactDOM.render(
+    <App name="World" />,
     document.getElementById("app")
 );

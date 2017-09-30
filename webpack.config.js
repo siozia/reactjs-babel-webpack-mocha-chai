@@ -11,7 +11,11 @@ module.exports={
         rules: [
             {
                 test: /\.css/,
-                loader:["style-loader","css-loader"]
+                loader:["style-loader","css-loader"],                        
+            },
+            {
+                test: /\.js/,
+                loader:["babel-loader"]
             }
 
         ]        

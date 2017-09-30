@@ -6,10 +6,20 @@
   "author": "Simone Iozia",
   "license": "Apache-2.0",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
     "chai": "^4.1.2",
     "css-loader": "^0.28.7",
+    "eslint": "^4.1.1",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-plugin-flowtype": "^2.34.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.1.0",
     "html-webpack-plugin": "^2.30.1",
-    "jshint": "^2.9.5",
     "mocha": "^3.5.3",
     "style-loader": "^0.18.2",
     "webpack": "^3.6.0",
@@ -17,13 +27,12 @@
   },
   "scripts": {
     "start": "$npm_execpath run lint && $npm_execpath run test && webpack-dev-server -d --port 3000",
-    "lint": "jshint src",
+    "lint": "eslint src && eslint test",
     "test:mocha": "mocha --reporter spec",
     "test": "$npm_execpath run test:mocha",
     "build": "$npm_execpath run lint && $npm_execpath run test && webpack -p"
   },
   "dependencies": {
-    "create-react-class": "^15.6.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   }

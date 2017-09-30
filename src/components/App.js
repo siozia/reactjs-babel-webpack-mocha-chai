@@ -1,15 +1,14 @@
-var e = require("react").createElement;
-var C = require("create-react-class");
-require("./App.css");
+import React, { Component } from 'react';
+import "./App.css";
 
-var App = C({
-    render: function() {
-        return e(
-            "p",
-            {className:"helloWorld"},
-            "Hello " + this.props.name);
+class App extends Component {
+    render() {
+        return (
+            <p className="helloWorld">
+                Hello {this.props.name}
+            </p>
+        );
     }
-});
+}
 
-module.exports=App;
-
+export default App;
