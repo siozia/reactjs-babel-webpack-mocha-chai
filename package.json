@@ -6,15 +6,20 @@
   "author": "Simone Iozia",
   "license": "Apache-2.0",
   "devDependencies": {
+    "chai": "^4.1.2",
     "css-loader": "^0.28.7",
     "html-webpack-plugin": "^2.30.1",
-    "jshint": "^2.9.5",
-    "jshint-loader": "^0.8.4",
+    "jshint": "^2.9.5",    
+    "mocha": "^3.5.3",
     "style-loader": "^0.18.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   },
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "$npm_execpath run lint && $npm_execpath run test && webpack-dev-server -d --port 3000",
+    "lint": "jshint src",
+    "test:mocha": "mocha --reporter spec",
+    "test": "$npm_execpath run test:mocha",
+    "build": "$npm_execpath run lint && $npm_execpath run test && webpack -p"
   }
 }
